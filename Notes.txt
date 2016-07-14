@@ -1,0 +1,5 @@
+Step by step explanation:
+
+1. We are using PiLFS(Linux from Scratch on the Raspberry Pii), the primary target device is Raspberry Pii-3 because it has much faster processing power.
+
+This the basic kernel image that I used http://circu.it/pilfs/pilfs-base-rpi3-20160622.img.xz
