@@ -9,6 +9,21 @@ Steps:
 1. Download the Image (http://circu.it/pilfs/pilfs-base-rpi3-20160622.img.xz) and use RUFUS(Free download on Windows) to make a bootable microSD card.
 
 2. Mount the card to the device and boot it up, the default user name is root and the password is "pilfs"
+	a. If you do a $ df -h (Shows you the disk space in Human Readable format, it might show more than 98% disk is used, and can't be utilized)
+	b. Now, we need to liberate the system aftet that you can use the free storage available.
+		Follow these instructions:
+Resizing Your ext4 Partition
+
+I. Start fdisk and press 'p' to print the partition table:
+$ fdisk /dev/mmcblk0
+II. Note the Start sector (98304 on the PiLFS Base image) of the Linux partition.
+> Now press 'd' and '2' to delete it.
+> Then press 'n', 'p', '2', the Start sector, 'enter' and 'w'.
+This re-creates the ext4 partition with the maximum size available.
+
+Finally, reboot your Pi, then perform the actual resize:
+
+III. resize2fs /dev/mmcblk0p2
 
 3. After you're logged in, the baby steps are completed now the major thing starts. 
 	Now we'll install the different linux packages.
