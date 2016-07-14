@@ -2,4 +2,14 @@ Step by step explanation:
 
 1. We are using PiLFS(Linux from Scratch on the Raspberry Pii), the primary target device is Raspberry Pii-3 because it has much faster processing power.
 
-This the basic kernel image that I used http://circu.it/pilfs/pilfs-base-rpi3-20160622.img.xz
+This the basic kernel image that I can be downloaded from this link -  http://circu.it/pilfs/pilfs-base-rpi3-20160622.img.xz
+A copy of this image is available on this repository also.
+
+Steps:
+1. Download the Image (http://circu.it/pilfs/pilfs-base-rpi3-20160622.img.xz) and use RUFUS(Free download on Windows) to make a bootable microSD card.
+
+2. Mount the card to the device and boot it up, the default user name is root and the password is "pilfs"
+
+3. After you're logged in, the baby steps are completed now the major thing starts. 
+	Now we'll install the different linux packages.
+	Note: This image does not have the sudo package installed so it needs to be manually installed and configured. You might have to tweak build scripts to make perfect install.
