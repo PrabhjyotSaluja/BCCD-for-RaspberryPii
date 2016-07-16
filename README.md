@@ -11,6 +11,7 @@ The goal of this project is to use the current BCCD operating system and run it 
 <h2>Development Team</h2>
 
 Dr. Jeremy Evert - Mentor (Southwestern Oklahoma State University)
+
 Prabhjyot Saluja - Lead Developer
 
 
