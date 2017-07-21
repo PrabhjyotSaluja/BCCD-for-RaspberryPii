@@ -44,5 +44,3 @@ except KeyboardInterrupt:
   # Reset GPIO settings
   GPIO.cleanup()
 
-# find more information on this script at
-# http://youtu.be/oaf_zQcrg7g
